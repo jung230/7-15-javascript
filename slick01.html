@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> slick 01 </title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick01_style.css">
+    
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/slick.js"></script>
+    <script lang="java">
+        $(function(){
+
+            /slide에 꼭 s붙이기/ 
+
+            $(".move").slick({
+                autoplay:true,
+                autoplaySpeed:3000,
+                dots:true,
+                arrows:true,
+                // slidesToShow:2,
+                // slidesToScroll:1
+                // vertical:true
+                // fade:true
+            });//move
+
+            $(".view").slick({
+                autoplay:true,
+                autoplaySpeed:2500,
+                fade:true,
+                dots:true
+            });//view
+
+            $(".face").slick({
+                autoplay:true,
+                slidesToShow:5.2,
+                slidesToScroll:2, // 한번에 넘길 이미지 개수
+                dots:true,
+            });
+
+            $(".face_1").slick({
+                autoplay:true,
+                slidesToShow: 1, // 화면에 보여질 이미지 개수
+                initialSlide: 5, // 처음 보여질 슬라이드 번호 defaul 0
+                centerMode:true, // 중앙에 슬라이드가 보여지는 모드
+                centerPadding:"100px", // 중앙에 슬라이드가 보여지는 모드에서 패딩값
+                pauseOnFocus : true ,
+                pauseOnHover : true ,
+                pauseOnDotsHover : true ,
+            })
+            
+
+        })// jquery
+
+    </script>
+    
+
+
+</head>
+<body>
+    
+    <div class="slid_img">
+        <ul class="move">
+            <li><a href="#"><img src="img/main_visual05.jpg" alt="main_visual05"></a></li>
+            <li><a href="#"><img src="img/main_visual06.jpg" alt="main_visual06"></a></li>
+            <li><a href="#"><img src="img/main_visual07.jpg" alt="main_visual07"></a></li>
+            <li><a href="#"><img src="img/main_visual08.jpg" alt="main_visual08"></a></li>
+        </ul>
+    </div><!-- slid_img -->
+
+
+    <div class="main_view">
+        <div class="view">
+            <div><a href="#"><img src="img/hollys01.jpg" alt="hollys01"></a></div>
+            <div><a href="#"><img src="img/hollys02.jpg" alt="hollys02"></a></div>
+            <div><a href="#"><img src="img/hollys03.jpg" alt="hollys03"></a></div>
+            <div><a href="#"><img src="img/hollys04.jpg" alt="hollys04"></a></div>
+        </div><!-- view -->
+    </div><!-- main_view -->
+
+
+    <div class="face_img">
+        <div class="face">
+            <div><img src="img/normal_01.png" alt="normal_01"></div>
+            <div><img src="img/normal_02.png" alt="normal_02"></div>
+            <div><img src="img/normal_03.png" alt="normal_03"></div>
+            <div><img src="img/normal_04.png" alt="normal_04"></div>
+            <div><img src="img/normal_05.png" alt="normal_05"></div>
+            <div><img src="img/normal_06.png" alt="normal_06"></div>
+            <div><img src="img/normal_07.png" alt="normal_07"></div>
+            <div><img src="img/normal_08.png" alt="normal_08"></div>
+            <div><img src="img/normal_09.png" alt="normal_09"></div>
+            <div><img src="img/normal_10.png" alt="normal_10"></div>
+            <div><img src="img/normal_11.png" alt="normal_11"></div>
+            <div><img src="img/normal_12.png" alt="normal_12"></div>
+        </div><!-- face -->
+    </div><!-- face_img -->
+
+
+    <div class="face_img">
+        <div class="face_1">
+            <div><img src="img/normal_01.png" alt="normal_01"></div>
+            <div><img src="img/normal_02.png" alt="normal_02"></div>
+            <div><img src="img/normal_03.png" alt="normal_03"></div>
+            <div><img src="img/normal_04.png" alt="normal_04"></div>
+            <div><img src="img/normal_05.png" alt="normal_05"></div>
+            <div><img src="img/normal_06.png" alt="normal_06"></div>
+            <div><img src="img/normal_07.png" alt="normal_07"></div>
+            <div><img src="img/normal_08.png" alt="normal_08"></div>
+            <div><img src="img/normal_09.png" alt="normal_09"></div>
+            <div><img src="img/normal_10.png" alt="normal_10"></div>
+            <div><img src="img/normal_11.png" alt="normal_11"></div>
+            <div><img src="img/normal_12.png" alt="normal_12"></div>
+        </div><!-- face -->
+    </div><!-- face_img -->
+
+
+    
+</body>
+</html>

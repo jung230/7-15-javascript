@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/slick.css">
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/slick.js"></script>
+    <script lang="java">
+        $(function(){
+
+            $(".move").slick({
+                autoplay:true,
+                appendArrows:$(".btn button"),
+                prevArrow: $(".left"), 
+                nextArrow: $(".right"), 
+            })//
+
+
+        })//jquery
+
+    </script>
+
+    <style type="text/css">
+        *{margin: 0; padding: 0;}
+        a{text-decoration: none; color: inherit;}
+        ul,li,ol{list-style: none;}
+        
+        .slide_img{
+            width: 980px;
+            height: 379px;
+            margin: 100px auto;
+        }
+
+        .btn{}
+        .btn .left{}
+        .btn .right{}
+        
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="slide_img">
+        <ul class="move">
+            <li><a href="#"><img src="img/KIA01.JPG" alt="KIA01"></a></li>
+            <li><a href="#"><img src="img/KIA02.JPG" alt="KIA02"></a></li>
+            <li><a href="#"><img src="img/KIA03.JPG" alt="KIA03"></a></li>
+            <li><a href="#"><img src="img/KIA04.JPG" alt="KIA04"></a></li>
+        </ul>
+
+
+        <div class="btn">
+            <button class="left">LEFT</button>
+            <button class="right">RIGHT</button>
+        </div><!-- btn -->
+
+
+    </div><!-- slide_img -->
+
+    
+</body>
+</html>
